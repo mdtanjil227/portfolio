@@ -27,7 +27,7 @@
                 <span>LinkedIn</span>
             </a>
 
-            <a href="mailto:tanjil227@gmail.com">
+            <a href=#contact>
                 <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
             </a>
@@ -61,10 +61,6 @@
                         <span>Contact</span>
                     </a>
                 </div>
-            </div>
-
-            <div class="headshot">
-                <img src="images/hero-headshot.webp" alt="Tanjil Headshot">
             </div>
         </section>
 
@@ -101,11 +97,65 @@
         </section>
 
         <!--Section 3 Projects-->
-        <section id="projects"></section>
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="project-container">
+
+                <div class="project-card">
+                    <img src="" alt="project image">
+                    <h3>Project Name</h3>
+                    <P>Short Description of the Project</P>
+                    <div class="project-buttons">
+                        <a href="" target="_blank">Source Code</a>
+                        <a href="" target="_blank">Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="" alt="project image">
+                    <h3>Project Name</h3>
+                    <P>Short Description of the Project</P>
+                    <div class="project-buttons">
+                        <a href="" target="_blank">Source Code</a>
+                        <a href="" target="_blank">Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="" alt="project image">
+                    <h3>Project Name</h3>
+                    <P>Short Description of the Project</P>
+                    <div class="project-buttons">
+                        <a href="" target="_blank">Source Code</a>
+                        <a href="" target="_blank">Live</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
 
         <!--Section Contact-->
-        <section id="contact"></section>
-
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="group">
+                <form action="https://formspree.io/f/yourformid" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
