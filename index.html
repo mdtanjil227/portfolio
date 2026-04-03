@@ -1,166 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Md Tanjil Sarwar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md Tanjil Sarwar | IT Support & Web Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <!--Navbar-->
-    <nav>
-        <div id="left">
-            <a href="/">Md Tanjil Sarwar</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Tanjil.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section home-section">
+    <h1>Hi, I am Tanjil</h1>
+    <h3>Junior Web Developer | IT Support Specialist</h3>
+    <p>I'm a Software Development graduate passionate about building clean, responsive web applications and solving IT problems. Currently focused on growing as a developer and IT support professional while building real-world projects.</p>
+    <div class="home-links">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://drive.google.com/file/d/1vyj9-Vf9HErV8hi-_lCG6JsUzhyCWImP/view?usp=drive_link" target="_blank">Resume</a>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/mdtanjil227" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+      <a href="https://www.linkedin.com/in/md-tanjil-sarwar/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="#contact"><i class="fa-solid fa-envelope"></i> Email</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="divider"></div>
+    <p>I'm a <strong>Software Development Diploma graduate</strong> from Bow Valley College in Calgary, AB, with hands-on experience in IT support, web development, and technical troubleshooting.</p>
+    <p>I've worked across help desk support, security operations, a government call centre, and remote web development — giving me a versatile, problem-solving mindset. I'm currently building a home lab and working toward my <strong>CompTIA A+</strong> certification.</p>
+    <div class="tag-row">
+      <span>Calgary, AB</span>
+      <span>Open to Work</span>
+      <span>CompTIA A+ (In Progress)</span>
+      <span>Google IT Support ✓</span>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <h2>Skills</h2>
+    <div class="divider"></div>
+
+    <p class="skill-cat-label">Web Development</p>
+    <div class="skills-row">
+      <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+      <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+      <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+      <div class="skill-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+      <div class="skill-item"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+    </div>
+
+    <p class="skill-cat-label">IT Support & Systems</p>
+    <div class="skills-row">
+      <div class="skill-item"><i class="fa-brands fa-windows"></i><span>Windows OS</span></div>
+      <div class="skill-item"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+      <div class="skill-item"><i class="fa-solid fa-network-wired"></i><span>Networking</span></div>
+      <div class="skill-item"><i class="fa-solid fa-users-gear"></i><span>Active Directory</span></div>
+      <div class="skill-item"><i class="fa-solid fa-ticket"></i><span>Ticketing Systems</span></div>
+      <div class="skill-item"><i class="fa-solid fa-shield-halved"></i><span>Firewall / UFW</span></div>
+    </div>
+
+    <p class="skill-cat-label">Tools & Other</p>
+    <div class="skills-row">
+      <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+      <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+      <div class="skill-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+      <div class="skill-item"><i class="fa-solid fa-terminal"></i><span>Bash</span></div>
+      <div class="skill-item"><i class="fa-solid fa-desktop"></i><span>VMware / VirtualBox</span></div>
+      <div class="skill-item"><i class="fa-solid fa-vial"></i><span>Postman</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="divider"></div>
+    <div class="exp-grid">
+
+      <div class="exp-card" data-modal="m1">
+        <div class="exp-top">
+          <div class="exp-icon"><i class="fa-solid fa-globe"></i></div>
+          <div>
+            <h3>Web Developer</h3>
+            <p class="exp-co">JaanitBD · Remote</p>
+          </div>
         </div>
-        <div id="right">
-            <a href="http://github.com/mdtanjil227" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> May 2025 – Present</p>
+        <p class="exp-blurb">Built React components, integrated APIs, and resolved frontend bugs in a remote team environment.</p>
+        <p class="exp-more">Read more <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
 
-            <a href="http://www.linkedin.com/in/md-tanjil-sarwar/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-
-            <a href=#contact>
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
+      <div class="exp-card" data-modal="m2">
+        <div class="exp-top">
+          <div class="exp-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h3>Security Supervisor</h3>
+            <p class="exp-co">Commissionaires Southern Alberta · Calgary</p>
+          </div>
         </div>
-    </nav>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Dec 2024 – Present</p>
+        <p class="exp-blurb">Monitored CCTV systems, reviewed incident logs, and trained staff on security protocols.</p>
+        <p class="exp-more">Read more <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
 
-    <main>
-        <!--Section 1 Hero-->
-        <section id="hero">
-            <div class="text">
-                <h2>Hi, I am Tanjil 👋</h2>
-                <h4>Junior Software Developer | Web Developer | IT Support </h4>
-                <p>I’m a Software Development graduate passionate 
-                    about building clean, responsive, and user-friendly web applications. 
-                    I enjoy turning ideas into practical solutions using modern web 
-                    technologies, and I’m currently focused on growing as a developer 
-                    while building real-world projects.
-                </p>
+      <div class="exp-card" data-modal="m3">
+        <div class="exp-top">
+          <div class="exp-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h3>Call Centre Agent</h3>
+            <p class="exp-co">Canada Revenue Agency · Alberta</p>
+          </div>
+        </div>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Jun 2024 – Dec 2024</p>
+        <p class="exp-blurb">Handled citizen inquiries, verified identities, and guided users through government portals.</p>
+        <p class="exp-more">Read more <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
 
-                <div class="links">
-                    <a href="#skills">
-                        <i class="fa-solid fa-code"></i>
-                         <span>Skills</span>
-                    </a>
-                    <a href="#projects">
-                        <i class="fa-solid fa-folder-open"></i>
-                        <span>Projects</span>
-                    </a>
-                    <a href="#contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1vyj9-Vf9HErV8hi-_lCG6JsUzhyCWImP/view?usp=drive_link">
-                        <i class="fa-solid fa-file"></i>
-                        <span>Resume</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+      <div class="exp-card" data-modal="m4">
+        <div class="exp-top">
+          <div class="exp-icon"><i class="fa-solid fa-laptop"></i></div>
+          <div>
+            <h3>IT Support Technician</h3>
+            <p class="exp-co">Homeland Agency · Dhaka</p>
+          </div>
+        </div>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Apr 2021 – Jun 2022</p>
+        <p class="exp-blurb">Installed hardware, managed Active Directory accounts, and maintained technical documentation.</p>
+        <p class="exp-more">Read more <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
 
-        <!--Section 2 Skills-->
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="cells">
-                <div class="cell">
-                    <img src="images/html-logo.webp" alt="">
-                    <span>HTML</span>
-                </div>
+      <div class="exp-card" data-modal="m5">
+        <div class="exp-top">
+          <div class="exp-icon"><i class="fa-solid fa-house-signal"></i></div>
+          <div>
+            <h3>IT Support Administrator</h3>
+            <p class="exp-co">Home Lab · Self-Directed</p>
+          </div>
+        </div>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Oct 2025 – Present</p>
+        <p class="exp-blurb">Built a virtualized environment using VMware with Ubuntu Server + client VMs, running osTicket, Apache, MySQL, and UFW.</p>
+        <p class="exp-more">Read more <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
 
-                <div class="cell">
-                    <img src="images/css-logo.webp" alt="">
-                    <span>CSS</span>
-                </div>
+    </div>
+  </section>
 
-                <div class="cell">
-                    <img src="images/javascript-logo.webp" alt="">
-                    <span>Javascript</span>
-                </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <h2>Projects</h2>
+    <div class="divider"></div>
+    <div class="proj-list">
 
-                <div class="cell">
-                    <img src="images/react-logo.webp" alt="">
-                    <span>React</span>
-                </div>
+      <div class="proj-card">
+        <img src="./img/lillup.png" alt="Lillup screenshot" class="proj-img" />
+        <h3>Lillup – Frontend Web Application (Capstone Project)</h3>
+        <p>A responsive frontend web platform developed as a capstone project for Lillup. Built with React, HTML, CSS, and JavaScript, the application includes a landing page, download portal, authentication interface, and account setup workflow.</p>
+        <div class="tag-row">
+          <span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="proj-btns">
+          <a href="https://github.com/mdtanjil227/lillup-capstone-frontend" target="_blank" class="proj-btn"><i class="fa-brands fa-github"></i> Repo</a>
+        </div>
+      </div>
 
-                <div class="cell">
-                    <img src="images/node-logo.webp" alt="">
-                    <span>Node.js</span>
-                </div>
+      <!-- ADD MORE PROJECTS BELOW — copy this block:
 
-            </div>
-        </section>
+      <div class="proj-card">
+        <img src="images/YOUR-SCREENSHOT.png" alt="Project screenshot" class="proj-img" />
+        <div class="proj-body">
+          <h3>Project Title</h3>
+          <p>Short description of the project.</p>
+          <div class="tag-row">
+            <span>Tag</span><span>Tag</span>
+          </div>
+          <div class="proj-btns">
+            <a href="#" target="_blank" class="proj-btn"><i class="fa-brands fa-github"></i> Repo</a>
+            <a href="#" target="_blank" class="proj-btn proj-btn-live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
 
-        <!--Section 3 Projects-->
-        <section id="projects">
+      -->
 
-            <h2>Projects</h2>
+    </div>
+  </section>
 
-            <div class="project-container">
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="divider"></div>
+    <p>I'm currently open to new opportunities. Feel free to reach out!</p>
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="fname" name="name" placeholder="Name" required />
+      <input type="email" id="femail" name="email" placeholder="Email" required />
+      <textarea id="fmsg" name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit" id="submitBtn"><span id="btnText">Send Message</span></button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </section>
 
-                <div class="project-card">
-                    <img src="images/lillup.png" alt="project image">
-                    <h3>Lillup – Frontend Web Application (Capstone Project)</h3>
-                    <P>A responsive frontend web platform developed as a capstone project for Lillup. 
-                        Built with React, HTML, CSS, and JavaScript, the application includes a landing page, 
-                        download portal, authentication interface, and account setup workflow.</P>
-                    <div class="project-buttons">
-                        <a href="https://github.com/mdtanjil227/lillup-capstone-frontend" target="_blank">Source Code</a>
-                    </div>
-                </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Md Tanjil Sarwar · Calgary, AB</p>
+    <div class="footer-links">
+      <a href="https://github.com/mdtanjil227" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/md-tanjil-sarwar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
 
-                <div class="project-card">
-                    <img src="" alt="project image">
-                    <h3>Project Name</h3>
-                    <P>Short Description of the Project</P>
-                    <div class="project-buttons">
-                        <a href="" target="_blank">Source Code</a>
-                        <a href="" target="_blank">Live</a>
-                    </div>
-                </div>
+  <!-- MODAL -->
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
 
-                <div class="project-card">
-                    <img src="" alt="project image">
-                    <h3>Project Name</h3>
-                    <P>Short Description of the Project</P>
-                    <div class="project-buttons">
-                        <a href="" target="_blank">Source Code</a>
-                        <a href="" target="_blank">Live</a>
-                    </div>
-                </div>
-                
-            </div>
+  <!-- MODAL TEMPLATES -->
+  <template id="m1">
+    <div class="modal-head">
+      <div class="exp-icon"><i class="fa-solid fa-globe"></i></div>
+      <div>
+        <h3>Web Developer</h3>
+        <p class="exp-co">JaanitBD · Remote</p>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> May 2025 – Present</p>
+      </div>
+    </div>
+    <ul class="modal-list">
+      <li>Built and maintained reusable React components in a production web application</li>
+      <li>Integrated third-party REST APIs and handled data flow between frontend and backend</li>
+      <li>Resolved frontend bugs and improved UI consistency across pages</li>
+      <li>Collaborated using Git workflows — branching, pull requests, and code reviews</li>
+    </ul>
+    <div class="tag-row"><span>React</span><span>JavaScript</span><span>REST APIs</span><span>Git</span></div>
+  </template>
 
-        </section>
+  <template id="m2">
+    <div class="modal-head">
+      <div class="exp-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div>
+        <h3>Security Supervisor</h3>
+        <p class="exp-co">Commissionaires Southern Alberta · Calgary, AB</p>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Dec 2024 – Present</p>
+      </div>
+    </div>
+    <ul class="modal-list">
+      <li>Monitored CCTV systems and reviewed incident logs to ensure site security</li>
+      <li>Supervised and trained staff on security protocols and incident reporting</li>
+      <li>Maintained detailed documentation of incidents and shift handover reports</li>
+      <li>Coordinated with management and law enforcement during incidents</li>
+    </ul>
+    <div class="tag-row"><span>CCTV Monitoring</span><span>Incident Reporting</span><span>Staff Training</span><span>Documentation</span></div>
+  </template>
 
-        <!--Section Contact-->
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="group">
-                <form action="https://formspree.io/f/yourformid" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                    <label for="message">Message</label>
-                    <textarea id="message"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-        
-    </main>
+  <template id="m3">
+    <div class="modal-head">
+      <div class="exp-icon"><i class="fa-solid fa-phone"></i></div>
+      <div>
+        <h3>Call Centre Agent</h3>
+        <p class="exp-co">Canada Revenue Agency · Alberta</p>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Jun 2024 – Dec 2024</p>
+      </div>
+    </div>
+    <ul class="modal-list">
+      <li>Handled inbound citizen inquiries on tax accounts, benefits, and government services</li>
+      <li>Performed identity verification following strict CRA security protocols</li>
+      <li>Guided callers through government portals and online self-service tools</li>
+      <li>Focused on first-call resolution to minimize repeat contacts</li>
+    </ul>
+    <div class="tag-row"><span>Customer Service</span><span>Identity Verification</span><span>Government Portals</span><span>First-Call Resolution</span></div>
+  </template>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="script.js"></script>
+  <template id="m4">
+    <div class="modal-head">
+      <div class="exp-icon"><i class="fa-solid fa-laptop"></i></div>
+      <div>
+        <h3>IT Support Technician</h3>
+        <p class="exp-co">Homeland Agency · Dhaka, Bangladesh</p>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Apr 2021 – Jun 2022</p>
+      </div>
+    </div>
+    <ul class="modal-list">
+      <li>Installed and configured hardware — desktops, printers, and peripheral devices</li>
+      <li>Managed user accounts and access permissions in Active Directory</li>
+      <li>Troubleshot hardware and software issues, escalating when necessary</li>
+      <li>Maintained clear technical documentation for recurring issues and resolutions</li>
+    </ul>
+    <div class="tag-row"><span>Active Directory</span><span>Hardware Setup</span><span>Troubleshooting</span><span>Documentation</span></div>
+  </template>
+
+  <template id="m5">
+    <div class="modal-head">
+      <div class="exp-icon"><i class="fa-solid fa-house-signal"></i></div>
+      <div>
+        <h3>IT Support Administrator</h3>
+        <p class="exp-co">Home Lab · Self-Directed</p>
+        <p class="exp-date"><i class="fa-regular fa-calendar"></i> Oct 2025 – Present</p>
+      </div>
+    </div>
+    <ul class="modal-list">
+      <li>Built a virtualized IT environment using VMware with Ubuntu Server and client VMs</li>
+      <li>Deployed and configured osTicket as a help desk ticketing system</li>
+      <li>Set up Apache web server, MySQL database, and OpenSSH for remote administration</li>
+      <li>Configured UFW firewall rules to control inbound and outbound traffic</li>
+      <li>Created a network diagram and troubleshooting runbook documenting common issues</li>
+    </ul>
+    <div class="tag-row"><span>VMware</span><span>Ubuntu Server</span><span>osTicket</span><span>Apache</span><span>MySQL</span><span>UFW</span><span>SSH</span></div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
