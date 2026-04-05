@@ -481,18 +481,25 @@ h2 {
   .exp-grid { grid-template-columns: 1fr; }
   .footer { flex-direction: column; text-align: center; }
 
-  /* Fix section padding on mobile */
+  
   .section, .section.alt { padding: 50px 20px; }
   .nav-inner { padding: 0 20px; }
 
-  /* Fix project cards on mobile */
+  
   .proj-list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .proj-card { padding: 10px; }
+  .proj-card { 
+    padding: 10px;
+    box-sizing: border-box;
+  }
   .proj-body { padding: 14px 14px 18px 14px; }
-  .proj-img { height: 180px; }
+  .proj-img {
+    height: 180px;
+    width: 100%;
+    min-width: 0;
+  }
   .proj-card h3 { font-size: 1rem; }
   .proj-card p { font-size: 0.9rem; }
 }
