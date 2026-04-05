@@ -340,7 +340,6 @@ h2 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 10px;
   padding: 10px 28px;
   border-radius: 6px;
   font-size: 0.88rem;
@@ -478,6 +477,22 @@ h2 {
   .nav-links.open { display: flex; }
   .hamburger { display: flex; }
   .home-section h1 { font-size: 2rem; }
+  .home-section h3 { font-size: 1.2rem; }
   .exp-grid { grid-template-columns: 1fr; }
   .footer { flex-direction: column; text-align: center; }
+
+  /* Fix section padding on mobile */
+  .section, .section.alt { padding: 50px 20px; }
+  .nav-inner { padding: 0 20px; }
+
+  /* Fix project cards on mobile */
+  .proj-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .proj-card { padding: 10px; }
+  .proj-body { padding: 14px 14px 18px 14px; }
+  .proj-img { height: 180px; }
+  .proj-card h3 { font-size: 1rem; }
+  .proj-card p { font-size: 0.9rem; }
 }
