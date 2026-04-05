@@ -496,7 +496,7 @@ h2 {
   }
   .proj-body { padding: 14px 14px 18px 14px; }
   .proj-img {
-    height: 180px;
+    height: 100%;
     width: 100%;
     min-width: 0;
   }
