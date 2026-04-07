@@ -71,10 +71,9 @@ document.querySelectorAll('.exp-card, .proj-card').forEach(el => {
 });
 
 // CONTACT FORM
-// Replace with your actual EmailJS credentials:
-const SERVICE_ID  = 'YOUR_SERVICE_ID';
-const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+const SERVICE_ID  = 'service_ke0atbd';
+const TEMPLATE_ID = 'template_9gn0j8h';
+const PUBLIC_KEY  = 'D-gXaRFnF6UwGrnpi';
 
 const form     = document.getElementById('contactForm');
 const formMsg  = document.getElementById('formMsg');
